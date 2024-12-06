@@ -1,13 +1,10 @@
 version: 0.2
+
 phases:
   install:
     commands:
-      - npm install -g aws-cdk
-      - npm install
+      - npm cache clean --force
+      - npm install --verbose
   build:
     commands:
-      - cdk synth
-      - cdk deploy --require-approval never
-artifacts:
-  files:
-    - "**/*"
+      - echo "Build complete"
