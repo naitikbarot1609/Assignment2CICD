@@ -34,6 +34,6 @@ coverage/
 package-lock.json
  
 # AWS-specific files for build and deployments
-buildspec.yml
+
  
 has context menu
